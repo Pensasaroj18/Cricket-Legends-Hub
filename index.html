@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Legends Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+  <h1>Welcome to Cricket Legends Hub</h1>
+  <p>Explore the Icons of Cricket Across Generations</p>
+  <a href="#players" class="cta-button">Meet the Legends</a>
+</header>
+
+
+  <!-- Introduction to Cricket -->
+  <section id="intro">
+    <h2>An Introduction to the World of Cricket</h2>
+    <p>Cricket is a sport with a rich history dating back centuries. From its origins in England to becoming a global phenomenon, cricket has produced some of the most iconic sportsmen. Whether it’s the nail-biting rivalries or the thrilling World Cup moments, cricket continues to capture the hearts of millions worldwide.</p>
+  </section>
+
+  <!-- Featured Players Section -->
+  <section id="players">
+    <h2>Featured Players</h2>
+    <div class="player-slider">
+      <div class="player">
+        <img src="player1.jpg" alt="Player 1">
+        <h3>Rohit Sharma (Hitman)</h3>
+        <p>Legendary Batsman</p>
+        <p><strong>Career Statistics:</strong> 10,000+ runs in ODI, 48centuries in ICC Career</p>
+        <p><strong>Achievements:</strong> World Cup Winner (2011), ICC Player of the Year (2012), ICC Men's ODI Cricketer of the year in 2019 , wisden cricketer of the year in 2022, ODI WORLDCUP Runner as a captain in 2023, T20 WORLDCUP winner as a captin in 2024 , 5TH time IPL cup winner as a captain , most SIXES in International, 5 T20 International Century and 3 ODI double century and most Individual score in ODI International(264)</p>
+      </div>
+      <div class="player">
+        <img src="player2.jpg" alt="Player 2">
+        <h3>Jasprit Bumrah (Boom Boom)</h3>
+        <p>Top Fast Bowler</p>
+        <p><strong>Career Statistics:</strong> 500 wickets, 10 five-wicket hauls</p>
+        <p><strong>Achievements:</strong> ICC Bowler of the Year (2010), Ashes Winner (2013), player of the Tournament in the ICC T20 WORLDCUP 2024, Highest wicket taker in ODI WORLDCUP 2023</p>
+      </div>
+      <!-- Add more player cards here -->
+    </div>
+  </section>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Interactive Map Section -->
+    <section id="map">
+      <h2>Explore the Legends' Hometowns</h2>
+      <div id="world-map"></div> <!-- Div to hold the map -->
+    </section>
+<!-- Top Matches Section with Video Highlights -->
+<section id="top-matches">
+    <h2>Memorable Matches</h2>
+    <div class="match-grid">
+      <!-- Match 1 -->
+      <div class="match-card">
+        <img src="match1.jpg" alt="Match 1">
+        <h3>India vs Pakistan - 2007</h3>
+        <p>An epic T20 World Cup final.</p>
+        <!-- Video Highlight -->
+        <video width="100%" controls>
+          <source src="match1_highlight.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+  
+      <!-- Match 2 -->
+      <div class="match-card">
+        <img src="match2.jpg" alt="Match 2">
+        <h3>Australia vs England - 2005</h3>
+        <p>A thrilling Ashes encounter.</p>
+        <!-- Video Highlight -->
+        <video width="100%" controls>
+          <source src="match2_highlight.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+  
+      <!-- Add more match cards as needed -->
+    </div>
+  </section>
+  
+
+<!-- Fan Zone Section -->
+<section id="fan-zone">
+    <h2>Fan Zone</h2>
+  
+    <!-- Voting Section -->
+    <div id="voting-section">
+      <h3>Vote for the Greatest Players of All Time</h3>
+      <form id="vote-form">
+        <label for="player-select">Select a Player:</label>
+        <select id="player-select">
+          <option value="Rohith Sharma">Rohit Sharma</option>
+          <option value="Jasprit Bumrah">Jasprit Bumrah</option>
+          <option value="Virat kohli">Virat kohli</option>
+          <option value="Sachin Tendulkar">Sachin Tendulkar</option>
+          <option value="MS Dhoni">MS Dhoni</option>
+          <!-- Add more players as needed -->
+        </select>
+        <button type="button" id="submit-vote">Submit Vote</button>
+      </form>
+      <div id="vote-results">
+        <!-- Vote results will be dynamically displayed here -->
+      </div>
+    </div>
+  
+    <!-- Story Submission Section -->
+    <div id="story-section">
+      <h3>Share Your Cricket Story</h3>
+      <form id="story-form">
+        <label for="fan-name">Your Name:</label>
+        <input type="text" id="fan-name" placeholder="Enter your name" required>
+  
+        <label for="fan-story">Your Favorite Cricket Story:</label>
+        <textarea id="fan-story" rows="4" placeholder="Share your favorite memory" required></textarea>
+  
+        <button type="button" id="submit-story">Submit Story</button>
+      </form>
+  
+      <div id="fan-stories">
+        <!-- Fan stories will be displayed here dynamically -->
+      </div>
+    </div>
+  </section>
+  
+    <!-- Leaflet.js JS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+
+  <footer>
+    <p1> 2024 Cricket Legends Hub </p1>
+    <P2> Created by RITESH KUMAR JENA</P2>
+  </footer>
+</body>
+</html>
